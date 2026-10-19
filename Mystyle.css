@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+min-height: 100dvh;
+
+}
+
+#advertisement{
+    background: linear-gradient(135deg, #ff0000, #8b0000);
+        min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    color: white;
+ transition: 0.5s ease;
+}
+
+
+#leftsidetext{
+    width: 50%;
+    max-width: 500px;
+}
+
+#leftsidetext h1{
+font-size: 50px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+#leftsidetext h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+
+}
+#leftsidetext p{
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+#leftsidetext h3{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+#SHOP{
+    padding: 15px 30px;
+    background-color: white;
+    border: none;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+cursor: pointer;
+transition: 0.3s ease;
+}
+#SHOP:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+.bottom{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 5px;
+    margin-top: 90px;
+}
+.dot{
+display: inline-block;
+width: 6px;
+height: 6px;
+background-color: white;
+border-radius: 50%;
+margin-right: 8px;
+}
+#rightsideproduct{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#rightsideproduct img{
+    height: 350px;
+width: 100%;
+  max-width: 450px;
+  object-fit: contain;
+ transition: transform 0,5s ease;
+}
+#productname{
+    font-size: 20px;
+font-weight: bold;
+    margin-top: 15px;
+}
+#rightside-product img:hover{
+    transform: scale(1.05);
+}
+#thumb{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    gap: 15px;
+}
+#thumb img{
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s ease;
+}
+#thumb p{
+    font-size: 14px;
+    margin-top: 5px;
+justify-content: center;
+text-align: center;
+}
+#thumb img:hover{
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    #advertisement{
+        padding: 20px 15px;
+    }
+}
+
+
+
